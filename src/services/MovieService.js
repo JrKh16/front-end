@@ -18,7 +18,7 @@ export async function getAllMovies() {
   try {
     //const response = await fetch('/api/users');
     //const response = await fetch('/api/movie/all');
-    const response = await fetch("http:///api.se-rmutl.net/api/movie/all");
+    const response = await fetch("http://api.se-rmutl.net/api/movie/all");
 
     //const response = await fetch('/api/movie/all');
     return await response.json();
@@ -28,7 +28,7 @@ export async function getAllMovies() {
 }
 
 export async function createMovie(data) {
-  const response = await fetch(`http:///api.se-rmutl.net/api/movie/insert`, {
+  const response = await fetch(`http://api.se-rmutl.net/api/movie/insert`, {
     //mode: 'no-cors',
     method: "POST",
     headers: { "Content-Type": "application/json" },
